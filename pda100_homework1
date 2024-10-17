@@ -84,20 +84,31 @@
 
 #32
 # import math
-# type_f = input('Введите тип фигуры:\n')
-# if type_f == 'круг' or type_f == 'КРУГ' or type_f == 'Круг':
-#     R = int(input('Введите радиус круга:\n'))
-#     print(f'Площадь круга: {round(math.pi * R ** 2, 2)}')
-# elif type_f == 'треугольник' or type_f == 'ТРЕУГОЛЬНИК' or type_f == 'Треугольник':
-#     A = int(input('Введите длину стороны A:\n'))
-#     B = int(input('Введите длину стороны B:\n'))
-#     C = int(input('Введите длину стороны C:\n'))
-#     P = 0.5 * (A + B + C)
-#     print(f'Площадь треугольника: {round((P * (P - A) * (P - B) * (P - C)) ** 0.5, 2)}')
-# elif type_f == 'прямоугольник' or type_f == 'ПРЯМОУГОЛЬНИК' or type_f == 'Прямоугольник':
-#     D = int(input('Введите длину стороны A:\n'))
-#     E = int(input('Введите длину стороны B:\n'))
-#     print(f'Площадь прямоугольника: {round((D * E), 2)}')
+# while True:
+#     type_f = input('Введите тип фигуры: [круг, треугольник, прямоугольник]\n')
+#     if type_f.lower() == 'круг':
+#         R = int(input('Введите радиус круга:\n'))
+#         print(f'Площадь круга: {round(math.pi * R ** 2, 2)}')
+#         break
+#     elif type_f.lower() == 'треугольник':
+#         while True:
+#             A = int(input('Введите длину стороны A:\n'))
+#             B = int(input('Введите длину стороны B:\n'))
+#             C = int(input('Введите длину стороны C:\n'))
+#             P = 0.5 * (A + B + C)
+#             if A + B > C and A + C > B and B + C > A:
+#                 print(f'Площадь треугольника: {round((P * (P - A) * (P - B) * (P - C)) ** 0.5, 2)}')
+#                 break
+#             else:
+#                 print('Треугольника с такими сторонами не существует, попробуй еще')
+#                 continue
+#     elif type_f.lower() == 'прямоугольник':
+#         D = int(input('Введите длину стороны A:\n'))
+#         E = int(input('Введите длину стороны B:\n'))
+#         print(f'Площадь прямоугольника: {round((D * E), 2)}')
+#         break
+#     else:
+#         print('Вы ввели недоступную фигуру, повторите ввод')
 
 #33-1
 # while True:
