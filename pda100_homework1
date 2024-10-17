@@ -178,3 +178,57 @@
 #             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {350 * tickets * 0.9} руб.')
 #         break
 # exit()
+
+#32_1 (преподаватель)
+# print(f'================================================\nПрограмма для подсчета стоимости билетов в кино.')
+# cost1 = 250
+# cost2 = 350
+# film = input('Выбрать фильм [Паразиты, 1917]:\n')
+# date = input('Выбрать день (сегодня, завтра):\n')
+# if film == 'Паразиты':
+#     time = int(input('Выбрать время:[12, 16]\n'))
+#     if time == 12:
+#         cost = cost1
+#     else:
+#         cost = cost2
+# elif film == '1917':
+#     time = int(input('Выбрать время:[10, 13]\n'))
+#     if time == 10:
+#         cost = cost1
+#     else:
+#         cost = cost2
+# tickets = int(input('Выбрать количество билетов:\n'))
+# if date == 'завтра' and tickets >= 5:
+#     coef = 0.85
+# elif date == 'завтра' and tickets < 5:
+#     coef = 0.95
+# elif date == 'сегодня' and tickets >= 5:
+#     coef = 1
+# else:
+#     coef = 0
+# print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {cost * tickets * coef} руб.')
+
+#32_2 (преподаватель)
+# print(f'================================================\nПрограмма для подсчета стоимости билетов в кино.')
+# cost1 = 250
+# cost2 = 350
+# film = input('Выбрать фильм [Паразиты, 1917]:\n')
+# date = input('Выбрать день (сегодня, завтра):\n')
+# if film == 'Паразиты':
+#     time = int(input('Выбрать номер времени в которое вы хотите прийти:[ 1) 12:00, 2) 16:00 ]\n'))
+# if film == '1917':
+#     time = int(input('Выбрать номер времени в которое вы хотите прийти:[ 1) 10:00, 2) 13:00 ]\n'))
+# if time == 1:
+#     cost = cost1
+# else:
+#     cost = cost2
+# tickets = int(input('Выбрать количество билетов:\n'))
+# if date == 'завтра' and tickets >= 5:
+#     coef = 0.85
+# elif date == 'завтра' and tickets < 5:
+#     coef = 0.95
+# elif date == 'сегодня' and tickets >= 5:
+#     coef = 0.8
+# else:
+#     coef = 1
+# print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {cost * tickets * coef} руб.')
