@@ -1,0 +1,180 @@
+# 18*
+# A = int(input('Введите значение числа А: '))
+# B = int(input('Введите значение числа B: '))
+# C = int(input('Введите значение числа C: '))
+# print(sum(i < 45 for i in (A, B, C)) == 1)
+
+# 19*
+# A, B = int(input('Введите значение числа А: ')), int(input('Введите значение числа B: '))
+# if A % 2 == 0 and B % 2 == 1 or A % 2 == 1 and B % 2 == 0:
+#     print(True)
+# else:
+#     print(False)
+
+# 21
+# num = int(input('Введите четырёхзначное число: '))
+# a = num // 1000
+# b = (num // 100) % 10
+# c = (num // 10) % 10
+# d = num % 10
+# if a + b == c + d:
+#     print('Сумма двух первых цифр равна сумме двух последних цифр')
+# else:
+#     print('Сумма двух первых цифр не равна сумме двух последних цифр')
+# if (a + b + c + d) % 7 == 0:
+#     print('Сумма всех цифр кратна семи')
+# else:
+#     print('Сумма всех цифр не кратна семи')
+
+#23
+# A = input()
+# teg = input()
+# print(f'<{teg}>{A}</{teg}>')
+
+#25*
+# colour =  input('Введите любимый цвет ')
+# if colour == 'red' or colour == 'RED' or colour == 'Red':
+#     print('I like red too')
+# else:
+#     print(f'I don’t like {colour}, I prefer red')
+
+#26
+# age = int(input('Input your age: '))
+# if age >= 18:
+#     print('You can vote')
+# elif age == 17:
+#     print('You can learn to drive')
+# elif age == 16:
+#     print('You can buy a lottery ticket')
+# else:
+#     print('You can go Trick-or-Treating')
+
+#27
+# A = int(input('Введите число: '))
+# if A < 10:
+#     print('Too low')
+# elif A >= 10 and A <= 20:
+#     print('Correct')
+# else:
+#     print('Too high')
+
+#28
+# A = int(input('Введите значение 1, 2 или 3: '))
+# if A == 1:
+#     print('Thank you')
+# elif A == 2:
+#     print('Well done')
+# elif A == 3:
+#     print('Correct')
+# else:
+#     print('Error message')
+
+#31
+# number = int(input('number = '))
+# n1 = number // 100000
+# n2 = number // 10000 % 10
+# n3 = number // 1000 % 10
+# n4 = number // 100 % 10
+# n5 = number // 10 % 10
+# n6 = number % 10
+# if n1 + n2 + n3 == n4 + n5 + n6:
+#     print('Результат:\nСчастливый билет')
+# else:
+#     print('Результат:\nНесчастливый билет')
+
+#32
+# import math
+# type_f = input('Введите тип фигуры:\n')
+# if type_f == 'круг' or type_f == 'КРУГ' or type_f == 'Круг':
+#     R = int(input('Введите радиус круга:\n'))
+#     print(f'Площадь круга: {round(math.pi * R ** 2, 2)}')
+# elif type_f == 'треугольник' or type_f == 'ТРЕУГОЛЬНИК' or type_f == 'Треугольник':
+#     A = int(input('Введите длину стороны A:\n'))
+#     B = int(input('Введите длину стороны B:\n'))
+#     C = int(input('Введите длину стороны C:\n'))
+#     P = 0.5 * (A + B + C)
+#     print(f'Площадь треугольника: {round((P * (P - A) * (P - B) * (P - C)) ** 0.5, 2)}')
+# elif type_f == 'прямоугольник' or type_f == 'ПРЯМОУГОЛЬНИК' or type_f == 'Прямоугольник':
+#     D = int(input('Введите длину стороны A:\n'))
+#     E = int(input('Введите длину стороны B:\n'))
+#     print(f'Площадь прямоугольника: {round((D * E), 2)}')
+
+#33-1
+# while True:
+#     print('================================================')
+#     print('Программа для подсчета стоимости билетов в кино.\n')
+#     print(f'Фильм "Паразиты", сеансы:\n• 12 часов – 250 руб,\n• 16 – 350 руб.\nФильм "1917", сеансы:\n• 10 часов – 250 руб,\n• 13 – 350 руб.\n')
+#     film = input('Выбрать фильм:\n')
+#     date = input('Выбрать день (сегодня, завтра):\n')
+#     time = int(input('Выбрать время:\n'))
+#     tickets = int(input('Выбрать количество билетов:\n'))
+#     while film.lower() == 'паразиты' or film.lower() == '1917':
+#         print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}')
+#         break
+#     else:
+#         print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nОшибка ввода')
+#         break
+#     if tickets >= 5:
+#         if date.lower() == 'завтра':
+#             if time == 10 or time == 12:
+#                 print(f'Результат: {tickets * 250 * 0.85} руб.')
+#             else:
+#                 print(f'Результат: {tickets * 350 * 0.85} руб.')
+#         elif date.lower() == 'сегодня':
+#             if time == 10 or time == 12:
+#                 print(f'Результат: {tickets * 250 * 0.95} руб.')
+#             else:
+#                 print(f'Результат: {tickets * 350 * 0.95} руб.')
+#     else:
+#         if time == 10 or time == 12:
+#             print(f'Результат: {tickets * 250} руб.')
+#         else:
+#             print(f'Результат: {tickets * 350} руб.')
+
+#33-2
+# while True:
+#     print(f'================================================\nПрограмма для подсчета стоимости билетов в кино.')
+#     film = input('Выбрать фильм:\n')
+#     date = input('Выбрать день (сегодня, завтра):\n')
+#     time = int(input('Выбрать время:\n'))
+#     tickets = int(input('Выбрать количество билетов:\n'))
+#     while '1917' != film.lower() != 'паразиты' or 'завтра' != date.lower() != 'сегодня' or time != 10 and time != 12 and time != 13 and time != 16:
+#         print(f'Выбрали фильм:\n{film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nОшибка ввода1')
+#         exit()
+#     while film.lower() == 'паразиты':
+#         if time == 10 or time == 13:
+#             print(f'Выбрали фильм:\n{film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nОшибка ввода2')
+#         else:
+#             break
+#         exit()
+#     while film.lower() == '1917':
+#         if time == 12 or time == 16:
+#             print(f'Выбрали фильм:\n{film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nОшибка ввода3')
+#         else:
+#             break
+#         exit()
+#     while date.lower() == 'завтра' and tickets >= 5:
+#         if time == 12 or time == 10:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {250 * tickets * 0.85} руб.')
+#         elif time == 13 or time == 16:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {350 * tickets * 0.85} руб.')
+#         break
+#     while date.lower() == 'завтра' and tickets < 5:
+#         if time == 12 or time == 10:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {250 * tickets * 0.95} руб.')
+#         elif time == 13 or time == 16:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {350 * tickets * 0.95} руб.')
+#         break
+#     while date.lower() == 'сегодня' and tickets < 5:
+#         if time == 12 or time == 10:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {250 * tickets * 1} руб.')
+#         elif time == 13 or time == 16:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {350 * tickets * 1} руб.')
+#         break
+#     while date.lower() == 'сегодня' and tickets >= 5:
+#         if time == 12 or time == 10:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {250 * tickets * 0.9} руб.')
+#         elif time == 13 or time == 16:
+#             print(f'Выбрали фильм: {film}\nДень: {date}\nВремя: {time}\nКоличество билетов: {tickets}\nРезультат: {350 * tickets * 0.9} руб.')
+#         break
+# exit()
